@@ -15,7 +15,5 @@ jobs:
       id: dhparam-generate
       # run: openssl dhparam -out dhparam-2048.pem 2048
       run: |
-        echo $PRIVATE_KEY > dhparam-2048.pem
         openssl dhparam -out dhparam-2048.pem 2048
-      env:
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+      

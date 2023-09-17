@@ -17,5 +17,5 @@ jobs:
       run: openssl dhparam -out dhparam-2048.pem 2048
     - name: add-env
       id: add-env
-      run: ${{env.dhparam='1231231'}}
+      run: ${{env.dhparam=1231231}}
       
